@@ -1,14 +1,11 @@
-
+import Hello from "./hello"
 
 function App() {
-
-
-  return (
-
-      
-      <h1>Learn React</h1>
-      
-
+    return (     
+      <>
+        <h1>Inside fragment</h1>
+        <Hello/>
+      </>
   )
 }
 
