@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link ,NavLink} from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
+
 
 export default function About() {
   return (
@@ -25,6 +27,7 @@ export default function About() {
                           Nobis minus voluptatibus pariatur dignissimos libero quaerat iure expedita at?
                           Asperiores nemo possimus nesciunt dicta veniam aspernatur quam mollitia.
                       </p>
+                     
                       <li>
                          <NavLink
                                     to={"/about/nishant"}
@@ -42,6 +45,7 @@ export default function About() {
                   </div>
               </div>
           </div>
+           <Outlet />
       </div>
   );
 }

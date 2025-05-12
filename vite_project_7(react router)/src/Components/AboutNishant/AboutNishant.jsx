@@ -1,6 +1,6 @@
 import React from 'react'
 
-function AboutNishant() {
+export default function AboutNishant() {
   return (
     <div>
       <h1>Hi my name is nishant</h1>
@@ -11,5 +11,3 @@ function AboutNishant() {
     </div>
   )
 }
-
-export default AboutNishant
