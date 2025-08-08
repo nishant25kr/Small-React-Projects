@@ -1,12 +1,19 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import ThemeContext from "../Contexts/ThemeContext";
 
 function ThemeCard() {
     const { thememode, setThememode } = useContext(ThemeContext);
 
+    useEffect(() => {
+        const htmlEl = document.documentElement;
+        htmlEl.classList.remove("light", "dark");
+        htmlEl.classList.add(thememode);
+    }, [thememode]);
+
+
     return (
         <div className="">
-            <div className={thememode === "dark" ? "bg-black text-white" : ""} >
+            <div  >
                 <p>This is ThemeCard</p>
                 <p>Now theme is <strong>{thememode}</strong></p>
 
